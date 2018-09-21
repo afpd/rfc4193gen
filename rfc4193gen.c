@@ -10,7 +10,7 @@ uint16_t ipv6addr[8];
 
 ipv6addr[0]=0xfd10;
 srand(time(NULL));
-ipv6addr[0] += rand() % 0x10;
+ipv6addr[0] += rand() % 0xf0;
 ipv6addr[1] = rand() % 0x10000;
 ipv6addr[2] = rand() % 0x10000;
 ipv6addr[3] = rand() % 0x10000;
